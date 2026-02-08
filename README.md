@@ -1,21 +1,22 @@
-# Digital Maturity Assessment Tool (EDIH Open DMA)
+# Digital Maturity Assessment Tool
 
-An end-to-end data science project assessing the digital transformation of 1,000 companies using the CRISP-DM methodology.
+A data science project that simulates and analyzes technology adoption across 1,000 companies. This tool tracks progress between two stages (Before and After) and identifies key growth drivers.
 
-## Methodology (CRISP-DM)
-1. **Business Understanding:** Quantifying the ROI of digital transformation interventions.
-2. **Data Understanding:** Based on the EDIH (European Digital Innovation Hubs) 6-dimension framework.
-3. **Data Preparation:** Synthetic generation of "Before" and "After" datasets with latent variable correlation.
-4. **Modeling:** Linear Regression to determine feature importance and predict maturity scores.
-5. **Evaluation:** Paired T-Tests to validate statistical significance of improvements.
-6. **Deployment:** Interactive Streamlit Dashboard and automated PDF reporting.
+## Project Steps (CRISP-DM)
+1. **Business Goal:** Measure the impact of digital improvements on total performance.
+2. **Categories:** Strategy, Infrastructure, Staff Skills, Data Management, AI, and Green Tech.
+3. **Data:** Generated 1,000 company records with "Before" and "After" scores for analysis.
+4. **Modeling:** Used Linear Regression to calculate which categories have the most impact on the final score.
+5. **Validation:** Used a T-Test to confirm that the improvement in scores is statistically significant.
+6. **Deployment:** Created an interactive dashboard and an automated PDF reporting system.
 
 ## How to Run
-1. Install dependencies: `pip install -r requirements.txt`
-2. Generate data & reports: `python src/data_generator.py`
-3. Launch dashboard: `streamlit run src/dashboard.py`
+1. **Install dependencies:** `pip install -r requirements.txt`
+2. **Generate data & reports:** `python src/data_generator.py`
+3. **Launch dashboard:** `python -m streamlit run src/dashboard.py`
 
-## Key Visuals
-- **Radar Charts:** Individual company performance tracking.
-- **Correlation Heatmaps:** Identifying drivers of digital growth.
-- **AI Predictor:** Real-time maturity estimation.
+## Features
+- **Comparison Charts:** Radar plots showing the "footprint" of a company's growth.
+- **Performance Ranking:** Tables showing the top and bottom performing companies.
+- **Score Predictor:** A tool to estimate scores based on custom inputs.
+- **Statistical Results:** Displays the P-Value to verify data reliability.
